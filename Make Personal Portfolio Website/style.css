@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 110vh;
+    background-image: url(images/bac.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    align-items: center;
+}
+
+img{
+    max-width: 100%;
+    height: 35px;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar li{
+    margin-right: 50px;
+    list-style: none;
+
+}
+
+.navbar ul a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1d1d1d;
+    text-transform: capitalize;
+}
+
+
+.navbar li a::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: black;
+    margin: auto;
+    transition: .4s;
+}
+
+.navbar li a:hover::after{
+    width: 100%;
+
+}
+
+.icon a{
+    color: black;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.text{
+    position: absolute;
+    top: 35%;
+    left: 12%;
+}
+
+.text h1{
+    color: #222222;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.text p{
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #414447;
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 10px 40px;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
